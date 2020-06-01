@@ -12,12 +12,10 @@ module.exports = function (app) {
     });
     app.delete("/api/notes/:id", function (request, response) {
         let urlId = request.params.id;
-        let filterId = notesData.filter(element => element.id != urlId);
+        console.log(notesData[urlId]);
+        notesData.splice(urlId,1);
+        return response.send();
 
-        let withoutId = JSON.parse(JSON.stringify(filterId));
-        console.log(withoutId);
-
-       response.send(withoutId);
     });
 }
 
