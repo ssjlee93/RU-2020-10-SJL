@@ -19,6 +19,8 @@ npm install
 * required npms: express, fs, path 
 
 ## Usage 
+My screenshots have dark background only because I have forced dark mode on Chrome browser. Otherws will have white background 
+
 1. Run the server in the terminal 
 ``` 
 node server.js
@@ -79,5 +81,3 @@ Making a delete request for the first time was troublesome.
 3. Array.splice(initialObj, Number of itesm to delete): splices the array and returns other itesm untouched. 
 
 I took #3. 
-
-
